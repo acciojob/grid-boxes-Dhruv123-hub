@@ -1,39 +1,38 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ddd;
+/*  your css code here. If applicable */
+#grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  
+  padding: 10px;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: #fff;
-    border: 5px solid #333;
-    border-radius: 20px;
+.t{
+	background-color: green;
+	color:white;
+	padding:0px 60px 60px 0px;
 }
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+.item1{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	background-color: green;
 }
-
-.red { background-color: #ff6b6b; }
-.yellow { background-color: #f3c623; }
-.blue { background-color: #3d8af7; }
-green { background-color: #18ce0f; }
-.pink { background-color: #fa94ab; }
-.orange { background-color: #ff9c00; }
-.purple { background-color: #a300da; }
-.brown { background-color: #774100; }
-.teal { background-color: #00c7c2; }
-
+.item2{
+	grid-row-start: 2;
+	grid-row-end: 6;
+	background-color: green;
+}
+.item4{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	background-color: green;
+}
+.item5{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	background-color: green;
+}
+.item10{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	background-color: green;
+}
